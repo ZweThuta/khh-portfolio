@@ -1,8 +1,9 @@
 import { motion } from "framer-motion";
-import art1 from "../assets/illu/iso1.jpg";
+import art1 from "../assets/illu/iso3.jpg";
+import art2 from "../assets/illu/iso2.png";
 
 
-const Art = () => {
+const Flat = () => {
   return (
     <div className="min-h-screen relative overflow-hidden bg-neutral-900">
       {/* Decorative background patterns */}
@@ -53,9 +54,9 @@ const Art = () => {
                   initial={{ x: -100, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
                   transition={{ delay: 1, duration: 0.8 }}
-                  className="inline-block bg-gradient-to-r from-pink-300 via-yellow-200 to-pink-300 bg-clip-text text-transparent drop-shadow-sm relative"
+                  className="inline-block bg-gradient-to-r from-pink-300 via-pink-200 to-pink-400 bg-clip-text text-transparent drop-shadow-sm relative"
                 >
-                  ISOMETRIC
+                  FLAT
                   <motion.div
                     initial={{ width: 0 }}
                     animate={{ width: "100%" }}
@@ -68,9 +69,9 @@ const Art = () => {
                   initial={{ x: 100, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
                   transition={{ delay: 1.2, duration: 0.8 }}
-                  className="inline-block bg-gradient-to-r from-yellow-200 via-pink-300 to-yellow-200 bg-clip-text text-transparent drop-shadow-sm relative"
+                  className="inline-block uppercase bg-gradient-to-r from-pink-300 via-pink-400 to-pink-200 bg-clip-text text-transparent drop-shadow-sm relative"
                 >
-                  DESIGN
+                  illustration
                   <motion.div
                     initial={{ width: 0 }}
                     animate={{ width: "100%" }}
@@ -129,7 +130,7 @@ const Art = () => {
                 <div className="relative  overflow-hidden">
                   <img 
                     src={art1} 
-                    alt="Isometric Design Artwork" 
+                    alt="Flat Design" 
                     className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700"
                   />
                   {/* Hover overlay gradient */}
@@ -162,8 +163,8 @@ const Art = () => {
                   transition={{ duration: 0.6 }}
                   className="text-2xl md:text-4xl font-bold mb-6 relative"
                 >
-                  <span className="bg-gradient-to-r from-pink-300 via-yellow-200 to-pink-300 bg-clip-text text-transparent">
-                    Isometric Design
+                  <span className="bg-gradient-to-r from-pink-300 via-pink-200 to-pink-300 bg-clip-text text-transparent">
+                  Flat Illustration
                   </span>
                 </motion.h2>
 
@@ -173,8 +174,7 @@ const Art = () => {
                   transition={{ duration: 0.6, delay: 0.3 }}
                   className="text-neutral-400 text-sm md:text-base leading-relaxed"
                 >
-                  The art is called an isometric design. I drew it with illustration using a graphic system. 
-                  I choose bright, happy color for this artwork and I won an annotation prize in my class.
+                 The train  across the city in the evening as evening as everyone go back home and the sun slowly sets allowing us to see the sunset.
                 </motion.p>
 
                 {/* Decorative line */}
@@ -187,10 +187,80 @@ const Art = () => {
               </motion.div>
             </div>
           </div>
+          <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 mt-20">
+             {/* Content - Right Side */}
+             <div className="w-full lg:w-1/3">
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                className="text-left"
+              >
+                <motion.h2
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6 }}
+                  className="text-2xl md:text-4xl font-bold mb-6 relative"
+                >
+                  <span className="bg-gradient-to-r from-pink-300 via-pink-200 to-pink-300 bg-clip-text text-transparent">
+                    Flat Illustration
+                  </span>
+                </motion.h2>
+
+                <motion.p
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ duration: 0.6, delay: 0.3 }}
+                  className="text-neutral-400 text-sm md:text-base leading-relaxed"
+                >
+                There is a shop in downtown called 'NEW LIFE'. I drew this picture using illustration.
+                </motion.p>
+
+                {/* Decorative line */}
+                <motion.div
+                  initial={{ width: 0 }}
+                  whileInView={{ width: "100%" }}
+                  transition={{ duration: 0.8, delay: 0.5 }}
+                  className="h-px bg-gradient-to-r from-pink-300/20 to-transparent mt-6"
+                ></motion.div>
+              </motion.div>
+            </div>
+            {/* Image Display - Left Side */}
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              className="w-full lg:w-2/3"
+            >
+              <div className="group relative overflow-hidden rounded-2xl bg-neutral-800/50">
+                <div className="relative  overflow-hidden">
+                  <img 
+                    src={art2} 
+                    alt="Flat Design" 
+                    className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700"
+                  />
+                  {/* Hover overlay gradient */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                </div>
+                
+                {/* Decorative elements */}
+                <motion.div
+                  initial={{ scale: 0 }}
+                  whileInView={{ scale: 1 }}
+                  transition={{ delay: 0.3, duration: 0.5 }}
+                  className="absolute -top-4 -right-4 w-20 h-20 border border-pink-300/20 rounded-full"
+                >
+                  <div className="absolute inset-1 border border-yellow-200/20 rounded-full"></div>
+                </motion.div>
+              </div>
+            </motion.div>
+
+           
+          </div>
         </div>
       </div>
     </div>
   );
 };
 
-export default Art;
+export default Flat;

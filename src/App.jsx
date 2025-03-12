@@ -8,6 +8,8 @@ import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Package from './components/Package'
 import Mascort from './components/Mascort'
+import Art from './components/Art'
+import Flat from './components/Flat'
 
 function App() {
 
@@ -41,6 +43,8 @@ function App() {
         <Projects/>
         <Package/>
         <Mascort/>
+        <Art/>
+        <Flat/>
         {/* <Contact/> */}
       </div>
     </section>

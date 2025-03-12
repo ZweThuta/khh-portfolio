@@ -34,7 +34,7 @@ const Projects = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.8, duration: 0.8 }}
-              className="text-6xl md:text-8xl font-bold mb-6"
+              className="text-4xl md:text-8xl font-bold mb-6"
             >
               <span className="inline-block bg-gradient-to-r from-[#F0C9A6] via-[#883F21] to-[#4A2C18] bg-clip-text text-transparent">
   Branding
@@ -101,7 +101,7 @@ const Projects = () => {
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
                   transition={{ duration: 0.6, delay: 0.2 }}
-                  className="text-neutral-400 max-w-3xl mx-auto text-lg"
+                  className="text-neutral-400 lg:max-w-3xl max-w-xl text-xs mx-auto lg:text-lg"
                 >
                   {project.description}
                 </motion.p>

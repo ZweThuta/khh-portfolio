@@ -28,14 +28,14 @@ const Package2 = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
-                className="text-4xl md:text-5xl font-bold mb-8 relative"
+                className="text-xl md:text-5xl  font-bold mb-8 relative"
               >
                <span className="bg-gradient-to-r from-orange-400 via-orange-500 to-red-400 bg-clip-text text-transparent">
                Jana Pure Ceylon Tea 
 </span>
 
                 <br />
-                <span className="text-3xl md:text-4xl text-neutral-400">
+                <span className="text-xl md:text-4xl text-neutral-400">
                   Packaging Design
                 </span>
               </motion.h2>
@@ -44,7 +44,7 @@ const Package2 = () => {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                className="text-neutral-400 max-w-3xl mx-auto text-lg leading-relaxed"
+                className="text-neutral-400 lg:max-w-3xl text-xs max-w-xl mx-auto lg:text-lg leading-relaxed"
               >
                This vibrant packaging design for Jana Pure Ceylon Tea embodies the essence of organic purity and premium quality. The warm orange tones create an inviting aesthetic, while the minimalist landscape illustration evokes a sense of tranquility and tradition. The tea pot and cup imagery symbolize warmth and comfort, reinforcing the brand's heritage. The modern yet natural design ensures shelf appeal while effectively communicating the product's authenticity and richness.
               </motion.p>

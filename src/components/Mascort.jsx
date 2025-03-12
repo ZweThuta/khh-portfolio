@@ -62,7 +62,7 @@ const Mascort = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.8, duration: 0.8 }}
-                className="text-7xl md:text-9xl font-black mb-6 relative z-10 tracking-tight"
+                className="text-4xl md:text-9xl font-black mb-6 relative z-10 tracking-tight"
               >
                 <motion.span
                   initial={{ x: -100, opacity: 0 }}
@@ -136,7 +136,7 @@ const Mascort = () => {
                 className="absolute -top-6 left-1/2 transform -translate-x-1/2 h-[1px] bg-gradient-to-r from-transparent via-green-500/30 to-transparent"
               ></motion.div>
               <motion.p
-                className="text-xl md:text-2xl text-neutral-300 max-w-2xl mx-auto mb-12 font-light leading-relaxed tracking-wide"
+                className="text-xs md:text-2xl text-neutral-300 max-w-2xl mx-auto mb-12 font-light leading-relaxed tracking-wide"
               >
                 <span className="text-green-400 font-medium">Bringing characters to life</span>{" "}
                 through creative and memorable mascot designs 
@@ -173,14 +173,14 @@ const Mascort = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
-                className="text-4xl md:text-5xl font-bold mb-8 relative"
+                className="text-2xl md:text-5xl font-bold mb-8 relative"
               >
                <span className="bg-gradient-to-r from-yellow-300 via-yellow-300 to-yellow-400 bg-clip-text text-transparent">
                The Heartwarming Mascot of YKKO
 </span>
 
                 <br />
-                <span className="text-3xl md:text-4xl text-neutral-400">
+                <span className="text-xl md:text-4xl text-neutral-400">
                   Mascort Design
                 </span>
               </motion.h2>
@@ -189,7 +189,7 @@ const Mascort = () => {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                className="text-neutral-400 max-w-3xl mx-auto text-lg leading-relaxed"
+                className="text-neutral-400 max-w-3xl mx-auto lg:text-lg text-xs leading-relaxed"
               >
                 This vibrant mascot design for YKKO embodies warmth, hospitality, and the brand's rich legacy. 
                 Featuring a cheerful green bear dressed as a friendly chef, the character symbolizes quality 
@@ -236,7 +236,7 @@ const Mascort = () => {
                       whileInView={{ opacity: 1, x: 0 }}
                       transition={{ duration: 0.6, delay: 0.3 }}
                     >
-                      <h3 className="text-2xl font-bold bg-gradient-to-r from-yellow-300 to-amber-200 bg-clip-text text-transparent mb-4"> Primary View Design</h3>
+                      <h3 className="lg:text-2xl text-xl font-bold bg-gradient-to-r from-yellow-300 to-amber-200 bg-clip-text text-transparent mb-4"> Primary View Design</h3>
                       <p className="text-neutral-400 text-sm leading-relaxed">Showcasing the mascot's friendly and welcoming personality, with carefully crafted details that bring the character to life.</p>
                     </motion.div>
                   </div>
@@ -281,7 +281,7 @@ const Mascort = () => {
                       whileInView={{ opacity: 1, x: 0 }}
                       transition={{ duration: 0.6, delay: 0.3 }}
                     >
-                      <h3 className="text-2xl font-bold bg-gradient-to-r from-yellow-300 to-amber-200 bg-clip-text text-transparent mb-4">Secondary View Design</h3>
+                      <h3 className="lg:text-2xl text-xl font-bold bg-gradient-to-r from-yellow-300 to-amber-200 bg-clip-text text-transparent mb-4">Secondary View Design</h3>
                       <p className="text-neutral-400 text-sm leading-relaxed">Highlighting the mascot's dynamic and expressive character through distinctive poses and engaging gestures.</p>
                     </motion.div>
                   </div>

@@ -27,7 +27,7 @@ const Hero = () => {
                 <span className="text-sm font-medium text-purple-500 tracking-wider uppercase mb-4 block">
                   Welcome to my portfolio
                 </span>
-                <h1 className="pb-4 text-5xl font-bold text-white tracking-tight lg:text-6xl">
+                <h1 className="pb-4 text-4xl font-bold text-white tracking-tight lg:text-6xl">
                   Khin Htet Hlaing
                 </h1>
               </motion.div>
@@ -36,7 +36,7 @@ const Hero = () => {
                 variants={container(0.3)}
                 initial="hidden"
                 animate="visible"
-                className="text-3xl font-semibold tracking-tight"
+                className="lg:text-3xl text-xl font-semibold tracking-tight"
               >
                 <span className="bg-gradient-to-r from-purple-500 via-pink-500 to-cyan-400 bg-clip-text text-transparent">
                   Graphic Designer & Freelancer
@@ -47,7 +47,7 @@ const Hero = () => {
                 variants={container(0.6)}
                 initial="hidden"
                 animate="visible"
-                className="text-lg max-w-4xl leading-relaxed text-neutral-300 text-justify bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 shadow-xl"
+                className="lg:text-lg lg:max-w-4xl max-w-lg text-sm  leading-relaxed text-neutral-300 text-justify bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 shadow-xl"
               >
                 {HERO_CONTENT}
               </motion.p>
@@ -58,18 +58,7 @@ const Hero = () => {
                 animate="visible"
                 className="flex gap-4 mt-8"
               >
-                <a
-                  href="#contact"
-                  className="px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white rounded-lg transition-colors duration-300"
-                >
-                  Get in Touch
-                </a>
-                <a
-                  href="#projects"
-                  className="px-6 py-3 border border-neutral-700 hover:border-purple-500 text-white rounded-lg transition-colors duration-300"
-                >
-                  View Projects
-                </a>
+                
               </motion.div>
             </div>
           </div>

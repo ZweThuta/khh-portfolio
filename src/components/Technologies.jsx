@@ -102,7 +102,7 @@ const Technologies = () => {
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 1.5 }}
-        className="my-20 text-center text-5xl md:text-6xl font-bold"
+        className="my-20 text-center text-4xl md:text-6xl font-bold"
       >
         <span className="bg-gradient-to-r from-purple-400 via-pink-500 to-cyan-400 bg-clip-text text-transparent">
           Software & Skills
@@ -120,7 +120,7 @@ const Technologies = () => {
             className="w-full backdrop-blur-sm bg-neutral-900/40 rounded-3xl p-8 border border-neutral-800/50 shadow-2xl"
           >
             <div className="relative">
-              <h2 className="text-3xl text-center mb-16 font-bold">
+              <h2 className="lg:text-3xl text-xl text-center mb-16 font-bold">
                 <span className="bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
                   Software Proficiency
                 </span>
@@ -142,10 +142,10 @@ const Technologies = () => {
                       {tool.icon}
                     </div>
                     <div>
-                      <p className="text-lg font-semibold text-white mb-1 bg-gradient-to-r from-white to-neutral-400 bg-clip-text text-transparent">
+                      <p className="lg:text-lg text-sm font-semibold text-white mb-1 bg-gradient-to-r from-white to-neutral-400 bg-clip-text text-transparent">
                         {tool.name}
                       </p>
-                      <p className="text-sm text-neutral-400">{tool.description}</p>
+                      <p className="lg:text-sm text-xs text-neutral-400">{tool.description}</p>
                     </div>
                   </div>
                 </motion.div>
@@ -161,7 +161,7 @@ const Technologies = () => {
             className="w-full backdrop-blur-sm bg-neutral-900/40 rounded-3xl p-8 border border-neutral-800/50 shadow-2xl"
           >
             <div className="relative">
-              <h2 className="text-3xl text-center mb-16 font-bold">
+              <h2 className="lg:text-3xl text-lg text-center mb-16 font-bold">
                 <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
                   Education Background
                 </span>
@@ -180,14 +180,14 @@ const Technologies = () => {
                 >
                   <div className="relative p-6 rounded-xl border border-neutral-700/50 bg-neutral-900/90 hover:border-neutral-600 transition-all duration-300 group-hover:scale-[1.02] group-hover:-translate-y-1">
                     <div className="flex items-center justify-between mb-4">
-                      <span className="px-4 py-1.5 rounded-full text-sm font-medium bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">
+                      <span className="lg:px-4 px-3 py-1.5 rounded-full text-sm font-medium bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">
                         {education.year}
                       </span>
                     </div>
-                    <h6 className="text-xl font-bold mb-2 bg-gradient-to-r from-white to-neutral-400 bg-clip-text text-transparent">
+                    <h6 className="lg:text-xl text-sm font-bold mb-2 bg-gradient-to-r from-white to-neutral-400 bg-clip-text text-transparent">
                       {education.role}
                     </h6>
-                    <p className="text-base text-cyan-400 hover:text-cyan-300 transition-colors duration-300">
+                    <p className="lg:text-base text-sm text-cyan-400 hover:text-cyan-300 transition-colors duration-300">
                       {education.company}
                     </p>
                   </div>
@@ -205,7 +205,7 @@ const Technologies = () => {
           className="w-full lg:w-1/2 backdrop-blur-sm bg-neutral-900/40 rounded-3xl p-8 border border-neutral-800/50 shadow-2xl"
         >
           <div className="relative">
-            <h2 className="text-3xl text-center mb-16 font-bold">
+            <h2 className="lg:text-3xl text-lg text-center mb-16 font-bold">
               <span className="bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
                 Design Skills
               </span>
@@ -213,7 +213,7 @@ const Technologies = () => {
             <div className="absolute top-0 right-0 w-20 h-20 bg-pink-500/10 rounded-full blur-2xl"></div>
           </div>
 
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid lg:grid-cols-2  grid-cols-1 gap-6">
             {designSkills.map((skill, index) => (
               <motion.div
                 key={index}
@@ -228,7 +228,7 @@ const Technologies = () => {
                     <div className={`bg-gradient-to-br ${skill.color} p-3 rounded-lg inline-block mb-4 shadow-lg`}>
                       {skill.icon}
                     </div>
-                    <p className="font-semibold text-base bg-gradient-to-r from-white to-neutral-400 bg-clip-text text-transparent group-hover:from-white group-hover:to-white transition-all duration-300">
+                    <p className="font-semibold lg:text-base text-sm bg-gradient-to-r from-white to-neutral-400 bg-clip-text text-transparent group-hover:from-white group-hover:to-white transition-all duration-300">
                       {skill.name}
                     </p>
                   </div>

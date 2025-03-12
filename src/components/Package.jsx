@@ -52,7 +52,7 @@ const Package = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.8, duration: 0.8 }}
-                className="text-6xl md:text-8xl font-bold mb-6 relative z-10"
+                className="text-4xl md:text-8xl font-bold mb-6 relative z-10"
               >
                 <motion.span
                   initial={{ x: -100, opacity: 0 }}
@@ -93,7 +93,7 @@ const Package = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 1.5, duration: 0.8 }}
-              className="text-lg md:text-xl text-neutral-400 max-w-2xl mx-auto mb-12"
+              className="text-base md:text-xl text-neutral-400 max-w-2xl mx-auto mb-12"
             >
               Creating memorable unboxing experiences through innovative package design
             </motion.p>
@@ -147,14 +147,14 @@ const Package = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
-                className="text-4xl md:text-5xl font-bold mb-8 relative"
+                className="text-xl md:text-5xl font-bold mb-8 relative"
               >
                <span className="bg-gradient-to-r from-green-400 via-green-500 to-green-400 bg-clip-text text-transparent">
   Sayar Moe Herbal Laxative
 </span>
 
                 <br />
-                <span className="text-3xl md:text-4xl text-neutral-400">
+                <span className="text-xl md:text-4xl text-neutral-400">
                   Packaging Design
                 </span>
               </motion.h2>
@@ -163,7 +163,7 @@ const Package = () => {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                className="text-neutral-400 max-w-3xl mx-auto text-lg leading-relaxed"
+                className="text-neutral-400 lg:max-w-3xl max-w-xl mx-auto lg:text-lg text-xs leading-relaxed"
               >
                 A clean and minimal packaging design for Sayar Moe, a traditional herbal laxative. 
                 The design incorporates an earthy color palette, simple typography, and an intuitive 

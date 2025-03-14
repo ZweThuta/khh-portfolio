@@ -66,7 +66,7 @@ const Package2 = () => {
                     className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-x-0 bottom-0 p-3 md:p-4 bg-gradient-to-t from-black/90 to-transparent">
-                    <p className="text-white text-sm md:text-base font-medium">Front View </p>
+                    {/* <p className="text-white text-sm md:text-base font-medium">Front View </p> */}
                   </div>
                 </div>
               </motion.div>
@@ -85,7 +85,7 @@ const Package2 = () => {
                     className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-x-0 bottom-0 p-3 md:p-4 bg-gradient-to-t from-black/90 to-transparent">
-                    <p className="text-white text-sm md:text-base font-medium">Side View Display</p>
+                    {/* <p className="text-white text-sm md:text-base font-medium">Side View Display</p> */}
                   </div>
                 </div>
               </motion.div>
@@ -104,7 +104,7 @@ const Package2 = () => {
                     className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-x-0 bottom-0 p-3 md:p-4 bg-gradient-to-t from-black/90 to-transparent">
-                    <p className="text-white text-sm md:text-base font-medium">Package Details</p>
+                    {/* <p className="text-white text-sm md:text-base font-medium">Package Details</p> */}
                   </div>
                 </div>
               </motion.div>

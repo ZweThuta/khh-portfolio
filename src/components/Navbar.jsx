@@ -14,7 +14,7 @@ const Navbar = () => {
             
             <div className="flex items-center justify-center gap-6">
               <a 
-                href="https://facebook.com" 
+                href="https://www.facebook.com/share/1FGsL31Dw5/?mibextid=wwXIfr" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="transform hover:scale-110 transition-transform duration-200"
@@ -23,7 +23,7 @@ const Navbar = () => {
               </a>
               
               <a 
-                href="https://instagram.com" 
+                href="https://www.instagram.com/khinhtethlaing4?igsh=MWZhMWczNWVxb2Z6dg%3D%3D&utm_source=qr" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="transform hover:scale-110 transition-transform duration-200"
@@ -32,7 +32,7 @@ const Navbar = () => {
               </a>
 
               <a 
-                href="https://tiktok.com" 
+                href="https://www.tiktok.com/@khin.htet.hlaing4?_t=ZS-8ucz4ywEub1&_r=1" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="transform hover:scale-110 transition-transform duration-200"

@@ -10,6 +10,7 @@ import Package from './components/Package'
 import Mascort from './components/Mascort'
 import Art from './components/Art'
 import Flat from './components/Flat'
+import Experimental from './components/Experimental'
 
 function App() {
 
@@ -45,6 +46,7 @@ function App() {
         <Mascort/>
         <Art/>
         <Flat/>
+        <Experimental/>
         {/* <Contact/> */}
       </div>
     </section>

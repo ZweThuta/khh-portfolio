@@ -11,6 +11,7 @@ import Mascort from './components/Mascort'
 import Art from './components/Art'
 import Flat from './components/Flat'
 import Experimental from './components/Experimental'
+import Poster from './components/Poster'
 
 function App() {
 
@@ -47,6 +48,7 @@ function App() {
         <Art/>
         <Flat/>
         <Experimental/>
+        <Poster/>
         {/* <Contact/> */}
       </div>
     </section>

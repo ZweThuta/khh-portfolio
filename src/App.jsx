@@ -12,6 +12,7 @@ import Art from './components/Art'
 import Flat from './components/Flat'
 import Experimental from './components/Experimental'
 import Poster from './components/Poster'
+import Thanks from './components/Thanks'
 
 function App() {
 
@@ -49,6 +50,7 @@ function App() {
         <Flat/>
         <Experimental/>
         <Poster/>
+        <Thanks/>
         {/* <Contact/> */}
       </div>
     </section>

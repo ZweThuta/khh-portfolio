@@ -13,14 +13,14 @@ const Navbar = () => {
             </div>
             
             <div className="flex items-center justify-center gap-6">
-              <a 
+              {/* <a 
                 href="https://www.facebook.com/share/1FGsL31Dw5/?mibextid=wwXIfr" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="transform hover:scale-110 transition-transform duration-200"
               >
                 <FaFacebook className="text-2xl text-[#1877F2] hover:opacity-80" />  
-              </a>
+              </a> */}
               
               <a 
                 href="https://www.instagram.com/khinhtethlaing4?igsh=MWZhMWczNWVxb2Z6dg%3D%3D&utm_source=qr" 

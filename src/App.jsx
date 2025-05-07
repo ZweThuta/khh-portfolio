@@ -13,6 +13,7 @@ import Flat from './components/Flat'
 import Experimental from './components/Experimental'
 import Poster from './components/Poster'
 import Thanks from './components/Thanks'
+import Typo from './components/Typo'
 
 function App() {
 
@@ -43,6 +44,7 @@ function App() {
         <Technologies/>
         {/* <About/> */}
         {/* <Education/> */}
+        <Typo/>
         <Projects/>
         <Package/>
         <Mascort/>

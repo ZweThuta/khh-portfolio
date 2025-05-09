@@ -312,37 +312,7 @@ const Poster = () => {
                  </div>
                </motion.div>
 
-               <motion.div
-                 initial={{ opacity: 0, y: 20 }}
-                 whileInView={{ opacity: 1, y: 0 }}
-                 transition={{ duration: 0.6, delay: 0.3 }}
-                 className="group relative overflow-hidden rounded-2xl bg-neutral-800/50"
-               >
-                 <div className="aspect-[3/4] overflow-hidden">
-                   <img 
-                     src={poster11} 
-                     alt="Poster Design 8"
-                     className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
-                   />
-                   <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                 </div>
-               </motion.div>
-
-               <motion.div
-                 initial={{ opacity: 0, y: 20 }}
-                 whileInView={{ opacity: 1, y: 0 }}
-                 transition={{ duration: 0.6, delay: 0.3 }}
-                 className="group relative overflow-hidden rounded-2xl bg-neutral-800/50"
-               >
-                 <div className="aspect-[3/4] overflow-hidden">
-                   <img 
-                     src={poster12} 
-                     alt="Poster Design 8"
-                     className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
-                   />
-                   <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                 </div>
-               </motion.div>
+          
              </div>
            </div>
          </div>

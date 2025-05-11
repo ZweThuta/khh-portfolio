@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { PROJECTS } from "../constants";
+import Branding from "./Branding";
 
 const Projects = () => {
   return (
@@ -8,8 +9,8 @@ const Projects = () => {
       {/* Decorative background patterns */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Gradient circles */}
-        <div className="absolute top-20 left-10 w-96 h-96 bg-[#C08A5D]/10 rounded-full blur-3xl"></div>
-<div className="absolute bottom-20 right-10 w-96 h-96 bg-[#883F21]/10 rounded-full blur-3xl"></div>
+        <div className="absolute top-20 left-10 w-96 h-96 bg-blue-900/10 rounded-full blur-3xl"></div>
+<div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-900/10 rounded-full blur-3xl"></div>
 
         
         {/* Grid pattern */}
@@ -36,12 +37,12 @@ const Projects = () => {
               transition={{ delay: 0.8, duration: 0.8 }}
               className="text-4xl md:text-8xl font-bold mb-6"
             >
-              <span className="inline-block bg-gradient-to-r from-[#F0C9A6] via-[#883F21] to-[#4A2C18] bg-clip-text text-transparent">
+              <span className="inline-block bg-gradient-to-r from-blue-500 via-purple-500 to-indigo-400 bg-clip-text text-transparent">
   Branding
 </span>
 <span className="inline-block ml-4 text-neutral-400">&</span>
 <br />
-<span className="inline-block bg-gradient-to-r from-[#ECE7E4] via-[#C08A5D] to-[#883F21] bg-clip-text text-transparent">
+<span className="inline-block bg-gradient-to-r from-blue-500 via-purple-500 to-indigo-400 bg-clip-text text-transparent">
   Logo Design
 </span>
 
@@ -76,6 +77,7 @@ const Projects = () => {
       </div>
     </div>
     <div>
+      <Branding/>
       {/* Project Display Section */}
       <div className="min-h-screen bg-neutral-900 py-20 px-4 relative">
         <div className="max-w-7xl mx-auto">

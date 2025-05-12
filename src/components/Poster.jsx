@@ -9,8 +9,6 @@ import poster7 from "../assets/poster/po7.png";
 import poster8 from "../assets/poster/po8.png";
 import poster9 from "../assets/poster/d25.jpeg";
 import poster10 from "../assets/poster/D28.jpeg";
-import poster11 from "../assets/poster/fight club.png";
-import poster12 from "../assets/poster/queen.png";
 
 const Poster = () => {
   return (
@@ -18,23 +16,23 @@ const Poster = () => {
       {/* Decorative background patterns */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Animated gradient circles */}
-        <motion.div 
-          animate={{ 
+        <motion.div
+          animate={{
             scale: [1, 1.2, 1],
-            rotate: [0, 90, 0]
+            rotate: [0, 90, 0],
           }}
           transition={{ duration: 20, repeat: Infinity }}
           className="absolute top-20 left-10 w-[500px] h-[500px] bg-blue-900/10 rounded-full blur-3xl"
         ></motion.div>
         <motion.div
-          animate={{ 
+          animate={{
             scale: [1.2, 1, 1.2],
-            rotate: [0, -90, 0]
+            rotate: [0, -90, 0],
           }}
           transition={{ duration: 20, repeat: Infinity }}
           className="absolute bottom-20 right-10 w-[500px] h-[500px] bg-blue-800/10 rounded-full blur-3xl"
         ></motion.div>
-        
+
         {/* Geometric pattern overlay */}
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:48px_48px] [mask-image:radial-gradient(ellipse_80%_80%_at_50%_50%,black,transparent)]"></div>
@@ -53,7 +51,7 @@ const Poster = () => {
           >
             {/* Main title with creative animation */}
             <div className="relative">
-              <motion.h1 
+              <motion.h1
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.8, duration: 0.8 }}
@@ -125,10 +123,10 @@ const Poster = () => {
               transition={{ delay: 1.5, duration: 0.8 }}
               className="relative"
             >
-              <motion.p
-                className="text-xs md:text-2xl text-neutral-300 max-w-2xl mx-auto mb-12 font-light leading-relaxed tracking-wide"
-              >
-                <span className="text-blue-400 font-medium">Crafting visual stories</span>{" "}
+              <motion.p className="text-xs md:text-2xl text-neutral-300 max-w-2xl mx-auto mb-12 font-light leading-relaxed tracking-wide">
+                <span className="text-blue-400 font-medium">
+                  Crafting visual stories
+                </span>{" "}
                 through compelling poster designs
               </motion.p>
 
@@ -144,178 +142,176 @@ const Poster = () => {
         </div>
       </div>
       <div>
-         {/* Project Display Section */}
-         <div className="py-20 px-4 relative">
-           <div className="max-w-7xl mx-auto">
-             {/* Grid Layout Container */}
-             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
-               {/* First Row */}
-               <motion.div
-                 initial={{ opacity: 0, y: 20 }}
-                 whileInView={{ opacity: 1, y: 0 }}
-                 transition={{ duration: 0.6 }}
-                 className="group relative overflow-hidden rounded-2xl bg-neutral-800/50"
-               >
-                 <div className="aspect-[3/4] overflow-hidden">
-                   <img 
-                     src={poster1} 
-                     alt="Poster Design 1"
-                     className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
-                   />
-                   <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                 </div>
-               </motion.div>
+        {/* Project Display Section */}
+        <div className="py-20 px-4 relative">
+          <div className="max-w-7xl mx-auto">
+            {/* Grid Layout Container */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+              {/* First Row */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                className="group relative overflow-hidden rounded-2xl bg-neutral-800/50"
+              >
+                <div className="aspect-[3/4] overflow-hidden">
+                  <img
+                    src={poster1}
+                    alt="Poster Design 1"
+                    className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                </div>
+              </motion.div>
 
-               <motion.div
-                 initial={{ opacity: 0, y: 20 }}
-                 whileInView={{ opacity: 1, y: 0 }}
-                 transition={{ duration: 0.6, delay: 0.1 }}
-                 className="group relative overflow-hidden rounded-2xl bg-neutral-800/50"
-               >
-                 <div className="aspect-[3/4] overflow-hidden">
-                   <img 
-                     src={poster2} 
-                     alt="Poster Design 2"
-                     className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
-                   />
-                   <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                 </div>
-               </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+                className="group relative overflow-hidden rounded-2xl bg-neutral-800/50"
+              >
+                <div className="aspect-[3/4] overflow-hidden">
+                  <img
+                    src={poster2}
+                    alt="Poster Design 2"
+                    className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                </div>
+              </motion.div>
 
-               <motion.div
-                 initial={{ opacity: 0, y: 20 }}
-                 whileInView={{ opacity: 1, y: 0 }}
-                 transition={{ duration: 0.6, delay: 0.2 }}
-                 className="group relative overflow-hidden rounded-2xl bg-neutral-800/50"
-               >
-                 <div className="aspect-[3/4] overflow-hidden">
-                   <img 
-                     src={poster3} 
-                     alt="Poster Design 3"
-                     className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
-                   />
-                   <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                 </div>
-               </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                className="group relative overflow-hidden rounded-2xl bg-neutral-800/50"
+              >
+                <div className="aspect-[3/4] overflow-hidden">
+                  <img
+                    src={poster3}
+                    alt="Poster Design 3"
+                    className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                </div>
+              </motion.div>
 
-               <motion.div
-                 initial={{ opacity: 0, y: 20 }}
-                 whileInView={{ opacity: 1, y: 0 }}
-                 transition={{ duration: 0.6, delay: 0.3 }}
-                 className="group relative overflow-hidden rounded-2xl bg-neutral-800/50"
-               >
-                 <div className="aspect-[3/4] overflow-hidden">
-                   <img 
-                     src={poster4} 
-                     alt="Poster Design 4"
-                     className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
-                   />
-                   <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                 </div>
-               </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+                className="group relative overflow-hidden rounded-2xl bg-neutral-800/50"
+              >
+                <div className="aspect-[3/4] overflow-hidden">
+                  <img
+                    src={poster4}
+                    alt="Poster Design 4"
+                    className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                </div>
+              </motion.div>
 
-               {/* Second Row */}
-               <motion.div
-                 initial={{ opacity: 0, y: 20 }}
-                 whileInView={{ opacity: 1, y: 0 }}
-                 transition={{ duration: 0.6 }}
-                 className="group relative overflow-hidden rounded-2xl bg-neutral-800/50"
-               >
-                 <div className="aspect-[3/4] overflow-hidden">
-                   <img 
-                     src={poster5} 
-                     alt="Poster Design 5"
-                     className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
-                   />
-                   <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                 </div>
-               </motion.div>
+              {/* Second Row */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                className="group relative overflow-hidden rounded-2xl bg-neutral-800/50"
+              >
+                <div className="aspect-[3/4] overflow-hidden">
+                  <img
+                    src={poster5}
+                    alt="Poster Design 5"
+                    className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                </div>
+              </motion.div>
 
-               <motion.div
-                 initial={{ opacity: 0, y: 20 }}
-                 whileInView={{ opacity: 1, y: 0 }}
-                 transition={{ duration: 0.6, delay: 0.1 }}
-                 className="group relative overflow-hidden rounded-2xl bg-neutral-800/50"
-               >
-                 <div className="aspect-[3/4] overflow-hidden">
-                   <img 
-                     src={poster6} 
-                     alt="Poster Design 6"
-                     className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
-                   />
-                   <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                 </div>
-               </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+                className="group relative overflow-hidden rounded-2xl bg-neutral-800/50"
+              >
+                <div className="aspect-[3/4] overflow-hidden">
+                  <img
+                    src={poster6}
+                    alt="Poster Design 6"
+                    className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                </div>
+              </motion.div>
 
-               <motion.div
-                 initial={{ opacity: 0, y: 20 }}
-                 whileInView={{ opacity: 1, y: 0 }}
-                 transition={{ duration: 0.6, delay: 0.2 }}
-                 className="group relative overflow-hidden rounded-2xl bg-neutral-800/50"
-               >
-                 <div className="aspect-[3/4] overflow-hidden">
-                   <img 
-                     src={poster7} 
-                     alt="Poster Design 7"
-                     className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
-                   />
-                   <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                 </div>
-               </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                className="group relative overflow-hidden rounded-2xl bg-neutral-800/50"
+              >
+                <div className="aspect-[3/4] overflow-hidden">
+                  <img
+                    src={poster7}
+                    alt="Poster Design 7"
+                    className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                </div>
+              </motion.div>
 
-               <motion.div
-                 initial={{ opacity: 0, y: 20 }}
-                 whileInView={{ opacity: 1, y: 0 }}
-                 transition={{ duration: 0.6, delay: 0.3 }}
-                 className="group relative overflow-hidden rounded-2xl bg-neutral-800/50"
-               >
-                 <div className="aspect-[3/4] overflow-hidden">
-                   <img 
-                     src={poster8} 
-                     alt="Poster Design 8"
-                     className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
-                   />
-                   <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                 </div>
-               </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+                className="group relative overflow-hidden rounded-2xl bg-neutral-800/50"
+              >
+                <div className="aspect-[3/4] overflow-hidden">
+                  <img
+                    src={poster8}
+                    alt="Poster Design 8"
+                    className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                </div>
+              </motion.div>
 
-               {/* Third Row */}
-               <motion.div
-                 initial={{ opacity: 0, y: 20 }}
-                 whileInView={{ opacity: 1, y: 0 }}
-                 transition={{ duration: 0.6, delay: 0.3 }}
-                 className="group relative overflow-hidden rounded-2xl bg-neutral-800/50"
-               >
-                 <div className="aspect-[3/4] overflow-hidden">
-                   <img 
-                     src={poster9} 
-                     alt="Poster Design 8"
-                     className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
-                   />
-                   <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                 </div>
-               </motion.div>
+              {/* Third Row */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+                className="group relative overflow-hidden rounded-2xl bg-neutral-800/50"
+              >
+                <div className="aspect-[3/4] overflow-hidden">
+                  <img
+                    src={poster9}
+                    alt="Poster Design 8"
+                    className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                </div>
+              </motion.div>
 
-               <motion.div
-                 initial={{ opacity: 0, y: 20 }}
-                 whileInView={{ opacity: 1, y: 0 }}
-                 transition={{ duration: 0.6, delay: 0.3 }}
-                 className="group relative overflow-hidden rounded-2xl bg-neutral-800/50"
-               >
-                 <div className="aspect-[3/4] overflow-hidden">
-                   <img 
-                     src={poster10} 
-                     alt="Poster Design 8"
-                     className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
-                   />
-                   <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                 </div>
-               </motion.div>
-
-          
-             </div>
-           </div>
-         </div>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+                className="group relative overflow-hidden rounded-2xl bg-neutral-800/50"
+              >
+                <div className="aspect-[3/4] overflow-hidden">
+                  <img
+                    src={poster10}
+                    alt="Poster Design 8"
+                    className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                </div>
+              </motion.div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

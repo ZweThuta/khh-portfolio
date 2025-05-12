@@ -4,30 +4,29 @@ import art2 from "../assets/illu/iso2.png";
 import art3 from "../assets/poster/fight club.png";
 import art4 from "../assets/poster/queen.png";
 
-
 const Flat = () => {
   return (
     <div className="min-h-screen relative overflow-hidden bg-neutral-900">
       {/* Decorative background patterns */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Animated gradient circles */}
-        <motion.div 
-          animate={{ 
+        <motion.div
+          animate={{
             scale: [1, 1.2, 1],
-            rotate: [0, 90, 0]
+            rotate: [0, 90, 0],
           }}
           transition={{ duration: 20, repeat: Infinity }}
           className="absolute top-20 left-10 w-[500px] h-[500px] bg-pink-300/10 rounded-full blur-3xl"
         ></motion.div>
         <motion.div
-          animate={{ 
+          animate={{
             scale: [1.2, 1, 1.2],
-            rotate: [0, -90, 0]
+            rotate: [0, -90, 0],
           }}
           transition={{ duration: 20, repeat: Infinity }}
           className="absolute bottom-20 right-10 w-[500px] h-[500px] bg-yellow-300/10 rounded-full blur-3xl"
         ></motion.div>
-        
+
         {/* Geometric pattern overlay */}
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:48px_48px] [mask-image:radial-gradient(ellipse_80%_80%_at_50%_50%,black,transparent)]"></div>
@@ -46,7 +45,7 @@ const Flat = () => {
           >
             {/* Main title with creative animation */}
             <div className="relative">
-              <motion.h1 
+              <motion.h1
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.8, duration: 0.8 }}
@@ -105,10 +104,10 @@ const Flat = () => {
               transition={{ delay: 1.5, duration: 0.8 }}
               className="relative"
             >
-              <motion.p
-                className="text-xs md:text-2xl text-neutral-300 max-w-2xl mx-auto mb-12 font-light leading-relaxed tracking-wide"
-              >
-                <span className="text-pink-300 font-medium">Creating depth and dimension</span>{" "}
+              <motion.p className="text-xs md:text-2xl text-neutral-300 max-w-2xl mx-auto mb-12 font-light leading-relaxed tracking-wide">
+                <span className="text-pink-300 font-medium">
+                  Creating depth and dimension
+                </span>{" "}
                 through innovative isometric illustrations
               </motion.p>
             </motion.div>
@@ -130,15 +129,15 @@ const Flat = () => {
             >
               <div className="group relative overflow-hidden rounded-2xl bg-neutral-800/50">
                 <div className="relative  overflow-hidden">
-                  <img 
-                    src={art1} 
-                    alt="Flat Design" 
+                  <img
+                    src={art1}
+                    alt="Flat Design"
                     className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700"
                   />
                   {/* Hover overlay gradient */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 </div>
-                
+
                 {/* Decorative elements */}
                 <motion.div
                   initial={{ scale: 0 }}
@@ -166,7 +165,7 @@ const Flat = () => {
                   className="text-2xl md:text-4xl font-bold mb-6 relative"
                 >
                   <span className="bg-gradient-to-r from-pink-300 via-pink-200 to-pink-300 bg-clip-text text-transparent">
-                  City Glide
+                    City Glide
                   </span>
                 </motion.h2>
 
@@ -176,7 +175,9 @@ const Flat = () => {
                   transition={{ duration: 0.6, delay: 0.3 }}
                   className="text-neutral-400 text-sm md:text-base leading-relaxed"
                 >
-                 The train  across the city in the evening as evening as everyone go back home and the sun slowly sets allowing us to see the sunset.
+                  The train across the city in the evening as evening as
+                  everyone go back home and the sun slowly sets allowing us to
+                  see the sunset.
                 </motion.p>
 
                 {/* Decorative line */}
@@ -190,8 +191,8 @@ const Flat = () => {
             </div>
           </div>
           <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 mt-20">
-             {/* Content - Right Side */}
-             <div className="w-full lg:w-1/3">
+            {/* Content - Right Side */}
+            <div className="w-full lg:w-1/3">
               <motion.div
                 initial={{ opacity: 0, x: 20 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -205,7 +206,7 @@ const Flat = () => {
                   className="text-2xl md:text-4xl font-bold mb-6 relative"
                 >
                   <span className="bg-gradient-to-r from-pink-300 via-pink-200 to-pink-300 bg-clip-text text-transparent">
-                  'NEW LIFE' Shop
+                    'NEW LIFE' Shop
                   </span>
                 </motion.h2>
 
@@ -215,7 +216,8 @@ const Flat = () => {
                   transition={{ duration: 0.6, delay: 0.3 }}
                   className="text-neutral-400 text-sm md:text-base leading-relaxed"
                 >
-                There is a shop in downtown called 'NEW LIFE'. I drew this picture using illustration.
+                  There is a shop in downtown called 'NEW LIFE'. I drew this
+                  picture using illustration.
                 </motion.p>
 
                 {/* Decorative line */}
@@ -236,15 +238,15 @@ const Flat = () => {
             >
               <div className="group relative overflow-hidden rounded-2xl bg-neutral-800/50">
                 <div className="relative  overflow-hidden">
-                  <img 
-                    src={art2} 
-                    alt="Flat Design" 
+                  <img
+                    src={art2}
+                    alt="Flat Design"
                     className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700"
                   />
                   {/* Hover overlay gradient */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 </div>
-                
+
                 {/* Decorative elements */}
                 <motion.div
                   initial={{ scale: 0 }}
@@ -256,8 +258,6 @@ const Flat = () => {
                 </motion.div>
               </div>
             </motion.div>
-
-           
           </div>
           <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 mt-20">
             {/* Image Display - Left Side */}
@@ -269,15 +269,15 @@ const Flat = () => {
             >
               <div className="group relative overflow-hidden rounded-2xl bg-neutral-800/50">
                 <div className="relative overflow-hidden">
-                  <img 
-                    src={art3} 
-                    alt="Fight Club Poster" 
+                  <img
+                    src={art3}
+                    alt="Fight Club Poster"
                     className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700"
                   />
                   {/* Hover overlay gradient */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 </div>
-                
+
                 {/* Decorative elements */}
                 <motion.div
                   initial={{ scale: 0 }}
@@ -315,7 +315,8 @@ const Flat = () => {
                   transition={{ duration: 0.6, delay: 0.3 }}
                   className="text-neutral-400 text-sm md:text-base leading-relaxed"
                 >
-                  A minimalist poster design inspired by the iconic movie Fight Club, capturing its essence through flat illustration.
+                  A minimalist poster design inspired by the iconic movie Fight
+                  Club, capturing its essence through flat illustration.
                 </motion.p>
 
                 {/* Decorative line */}
@@ -345,7 +346,7 @@ const Flat = () => {
                   className="text-2xl md:text-4xl font-bold mb-6 relative"
                 >
                   <span className="bg-gradient-to-r from-pink-300 via-pink-200 to-pink-300 bg-clip-text text-transparent">
-                  The Queen’s Gambit Poster
+                    The Queen’s Gambit Poster
                   </span>
                 </motion.h2>
 
@@ -355,7 +356,10 @@ const Flat = () => {
                   transition={{ duration: 0.6, delay: 0.3 }}
                   className="text-neutral-400 text-sm md:text-base leading-relaxed"
                 >
-                  This flat illustration, inspired by The Queen’s Gambit, depicts Beth Harmon at a chessboard, symbolizing her rise in chess and struggles with addiction, with a looming queen piece and pills highlighting key themes of the story.
+                  This flat illustration, inspired by The Queen’s Gambit,
+                  depicts Beth Harmon at a chessboard, symbolizing her rise in
+                  chess and struggles with addiction, with a looming queen piece
+                  and pills highlighting key themes of the story.
                 </motion.p>
 
                 {/* Decorative line */}
@@ -377,15 +381,15 @@ const Flat = () => {
             >
               <div className="group relative overflow-hidden rounded-2xl bg-neutral-800/50">
                 <div className="relative overflow-hidden">
-                  <img 
-                    src={art4} 
-                    alt="Queen Poster" 
+                  <img
+                    src={art4}
+                    alt="Queen Poster"
                     className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700"
                   />
                   {/* Hover overlay gradient */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 </div>
-                
+
                 {/* Decorative elements */}
                 <motion.div
                   initial={{ scale: 0 }}

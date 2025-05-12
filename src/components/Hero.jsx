@@ -57,9 +57,7 @@ const Hero = () => {
                 initial="hidden"
                 animate="visible"
                 className="flex gap-4 mt-8"
-              >
-                
-              </motion.div>
+              ></motion.div>
             </div>
           </div>
 

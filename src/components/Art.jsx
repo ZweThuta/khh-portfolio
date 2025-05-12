@@ -1,30 +1,29 @@
 import { motion } from "framer-motion";
 import art1 from "../assets/illu/iso1.jpg";
 
-
 const Art = () => {
   return (
     <div className="min-h-screen relative overflow-hidden bg-neutral-900">
       {/* Decorative background patterns */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Animated gradient circles */}
-        <motion.div 
-          animate={{ 
+        <motion.div
+          animate={{
             scale: [1, 1.2, 1],
-            rotate: [0, 90, 0]
+            rotate: [0, 90, 0],
           }}
           transition={{ duration: 20, repeat: Infinity }}
           className="absolute top-20 left-10 w-[500px] h-[500px] bg-pink-300/10 rounded-full blur-3xl"
         ></motion.div>
         <motion.div
-          animate={{ 
+          animate={{
             scale: [1.2, 1, 1.2],
-            rotate: [0, -90, 0]
+            rotate: [0, -90, 0],
           }}
           transition={{ duration: 20, repeat: Infinity }}
           className="absolute bottom-20 right-10 w-[500px] h-[500px] bg-yellow-300/10 rounded-full blur-3xl"
         ></motion.div>
-        
+
         {/* Geometric pattern overlay */}
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:48px_48px] [mask-image:radial-gradient(ellipse_80%_80%_at_50%_50%,black,transparent)]"></div>
@@ -43,7 +42,7 @@ const Art = () => {
           >
             {/* Main title with creative animation */}
             <div className="relative">
-              <motion.h1 
+              <motion.h1
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.8, duration: 0.8 }}
@@ -102,10 +101,10 @@ const Art = () => {
               transition={{ delay: 1.5, duration: 0.8 }}
               className="relative"
             >
-              <motion.p
-                className="text-xs md:text-2xl text-neutral-300 max-w-2xl mx-auto mb-12 font-light leading-relaxed tracking-wide"
-              >
-                <span className="text-pink-300 font-medium">Creating depth and dimension</span>{" "}
+              <motion.p className="text-xs md:text-2xl text-neutral-300 max-w-2xl mx-auto mb-12 font-light leading-relaxed tracking-wide">
+                <span className="text-pink-300 font-medium">
+                  Creating depth and dimension
+                </span>{" "}
                 through innovative isometric illustrations
               </motion.p>
             </motion.div>
@@ -127,15 +126,15 @@ const Art = () => {
             >
               <div className="group relative overflow-hidden rounded-2xl bg-neutral-800/50">
                 <div className="relative  overflow-hidden">
-                  <img 
-                    src={art1} 
-                    alt="Isometric Design Artwork" 
+                  <img
+                    src={art1}
+                    alt="Isometric Design Artwork"
                     className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700"
                   />
                   {/* Hover overlay gradient */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 </div>
-                
+
                 {/* Decorative elements */}
                 <motion.div
                   initial={{ scale: 0 }}
@@ -173,8 +172,10 @@ const Art = () => {
                   transition={{ duration: 0.6, delay: 0.3 }}
                   className="text-neutral-400 text-sm md:text-base leading-relaxed"
                 >
-                  The art is called an isometric design. I drew it with illustration using a graphic system. 
-                  I choose bright, happy color for this artwork and I won an annotation prize in my class.
+                  The art is called an isometric design. I drew it with
+                  illustration using a graphic system. I choose bright, happy
+                  color for this artwork and I won an annotation prize in my
+                  class.
                 </motion.p>
 
                 {/* Decorative line */}

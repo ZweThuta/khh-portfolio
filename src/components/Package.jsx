@@ -5,30 +5,29 @@ import package3 from "../assets/package/package3.png";
 import package4 from "../assets/package/package6.png";
 import Package2 from "./Package2";
 
-
 const Package = () => {
   return (
     <div className="min-h-screen relative overflow-hidden bg-neutral-900">
       {/* Decorative background patterns */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Animated gradient circles */}
-        <motion.div 
-          animate={{ 
+        <motion.div
+          animate={{
             scale: [1, 1.2, 1],
-            rotate: [0, 90, 0]
+            rotate: [0, 90, 0],
           }}
           transition={{ duration: 20, repeat: Infinity }}
           className="absolute top-20 left-10 w-[500px] h-[500px] bg-amber-500/10 rounded-full blur-3xl"
         ></motion.div>
         <motion.div
-          animate={{ 
+          animate={{
             scale: [1.2, 1, 1.2],
-            rotate: [0, -90, 0]
+            rotate: [0, -90, 0],
           }}
           transition={{ duration: 20, repeat: Infinity }}
           className="absolute bottom-20 right-10 w-[500px] h-[500px] bg-orange-500/10 rounded-full blur-3xl"
         ></motion.div>
-        
+
         {/* Geometric pattern overlay */}
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:48px_48px] [mask-image:radial-gradient(ellipse_80%_80%_at_50%_50%,black,transparent)]"></div>
@@ -45,10 +44,9 @@ const Package = () => {
             transition={{ duration: 1 }}
             className="text-center"
           >
-
             {/* Main title with creative animation */}
             <div className="relative">
-              <motion.h1 
+              <motion.h1
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.8, duration: 0.8 }}
@@ -95,7 +93,8 @@ const Package = () => {
               transition={{ delay: 1.5, duration: 0.8 }}
               className="text-base md:text-xl text-neutral-400 max-w-2xl mx-auto mb-12"
             >
-              Creating memorable unboxing experiences through innovative package design
+              Creating memorable unboxing experiences through innovative package
+              design
             </motion.p>
 
             {/* Scroll indicator */}
@@ -106,7 +105,9 @@ const Package = () => {
               className="absolute bottom-12 left-1/2 transform -translate-x-1/2"
             >
               <div className="flex flex-col items-center">
-                <span className="text-neutral-500 text-sm mb-2">Scroll to explore</span>
+                <span className="text-neutral-500 text-sm mb-2">
+                  Scroll to explore
+                </span>
                 <motion.div
                   animate={{ y: [0, 10, 0] }}
                   transition={{ duration: 1.5, repeat: Infinity }}
@@ -123,7 +124,7 @@ const Package = () => {
           </motion.div>
         </div>
       </div>
-      <Package2/>
+      <Package2 />
 
       {/* Project Display Section */}
       <div className="min-h-screen bg-neutral-900 py-20 px-4 relative">
@@ -142,16 +143,16 @@ const Package = () => {
                 transition={{ delay: 0.2, duration: 0.5 }}
                 className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-24 h-24 border border-amber-500/20 rounded-full"
               ></motion.div>
-              
+
               <motion.h2
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
                 className="text-xl md:text-5xl font-bold mb-8 relative"
               >
-               <span className="bg-gradient-to-r from-green-400 via-green-500 to-green-400 bg-clip-text text-transparent">
-  Sayar Moe Herbal Laxative
-</span>
+                <span className="bg-gradient-to-r from-green-400 via-green-500 to-green-400 bg-clip-text text-transparent">
+                  Sayar Moe Herbal Laxative
+                </span>
 
                 <br />
                 <span className="text-xl md:text-4xl text-neutral-400">
@@ -165,11 +166,13 @@ const Package = () => {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className="text-neutral-400 lg:max-w-3xl max-w-xl mx-auto lg:text-lg text-xs leading-relaxed"
               >
-                A clean and minimal packaging design for Sayar Moe, a traditional herbal laxative. 
-                The design incorporates an earthy color palette, simple typography, and an intuitive 
-                digestive health icon to convey a sense of natural wellness and gentle relief. 
-                The combination of soft tones and structured layout ensures clarity and trustworthiness, 
-                making it an effective design for health and wellness branding.
+                A clean and minimal packaging design for Sayar Moe, a
+                traditional herbal laxative. The design incorporates an earthy
+                color palette, simple typography, and an intuitive digestive
+                health icon to convey a sense of natural wellness and gentle
+                relief. The combination of soft tones and structured layout
+                ensures clarity and trustworthiness, making it an effective
+                design for health and wellness branding.
               </motion.p>
             </div>
 
@@ -183,7 +186,7 @@ const Package = () => {
                   transition={{ duration: 0.6 }}
                   className="col-span-12 md:col-span-6 group relative overflow-hidden rounded-xl bg-neutral-800/50"
                 >
-                  <div className="relative aspect-[4/3] md:aspect-square overflow-hidden"> 
+                  <div className="relative aspect-[4/3] md:aspect-square overflow-hidden">
                     <img
                       src={package1}
                       alt="Sayar Moe Package Side View"
@@ -201,7 +204,7 @@ const Package = () => {
                   transition={{ duration: 0.6, delay: 0.2 }}
                   className="col-span-12 md:col-span-6 group relative overflow-hidden rounded-xl bg-neutral-800/50"
                 >
-                  <div className="relative aspect-[4/3] md:aspect-square overflow-hidden"> 
+                  <div className="relative aspect-[4/3] md:aspect-square overflow-hidden">
                     <img
                       src={package2}
                       alt="Sayar Moe Package Front View"
@@ -222,7 +225,7 @@ const Package = () => {
                   transition={{ duration: 0.6 }}
                   className="col-span-12 md:col-span-6 group relative overflow-hidden rounded-xl bg-neutral-800/50"
                 >
-                  <div className="relative aspect-[4/3] md:aspect-square overflow-hidden"> 
+                  <div className="relative aspect-[4/3] md:aspect-square overflow-hidden">
                     <img
                       src={package3}
                       alt="Sayar Moe Package Detail View"
@@ -240,7 +243,7 @@ const Package = () => {
                   transition={{ duration: 0.6, delay: 0.2 }}
                   className="col-span-12 md:col-span-6 group relative overflow-hidden rounded-xl bg-neutral-800/50"
                 >
-                  <div className="relative aspect-[4/3] md:aspect-square overflow-hidden"> 
+                  <div className="relative aspect-[4/3] md:aspect-square overflow-hidden">
                     <img
                       src={package4}
                       alt="Sayar Moe Package Back View"
@@ -253,8 +256,6 @@ const Package = () => {
                 </motion.div>
               </div>
             </div>
-
-
           </motion.div>
         </div>
 

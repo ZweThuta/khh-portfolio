@@ -1,5 +1,5 @@
-import React from 'react';
-import { ABOUT_TEXT } from '../constants';
+import React from "react";
+import { ABOUT_TEXT } from "../constants";
 import { motion } from "framer-motion";
 
 const About = () => {

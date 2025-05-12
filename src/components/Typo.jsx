@@ -10,32 +10,29 @@ import typo8 from "../assets/typo/yuniqproject-11.png";
 import typo9 from "../assets/typo/yuniqproject-15.png";
 import typo10 from "../assets/typo/typo10.jpeg";
 
-
-
-
 const Typo = () => {
   return (
     <div className="min-h-screen relative overflow-hidden bg-neutral-900">
       {/* Decorative background patterns */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Animated gradient circles */}
-        <motion.div 
-          animate={{ 
+        <motion.div
+          animate={{
             scale: [1, 1.2, 1],
-            rotate: [0, 90, 0]
+            rotate: [0, 90, 0],
           }}
           transition={{ duration: 20, repeat: Infinity }}
           className="absolute top-20 left-10 w-[500px] h-[500px] bg-blue-900/10 rounded-full blur-3xl"
         ></motion.div>
         <motion.div
-          animate={{ 
+          animate={{
             scale: [1.2, 1, 1.2],
-            rotate: [0, -90, 0]
+            rotate: [0, -90, 0],
           }}
           transition={{ duration: 20, repeat: Infinity }}
           className="absolute bottom-20 right-10 w-[500px] h-[500px] bg-blue-800/10 rounded-full blur-3xl"
         ></motion.div>
-        
+
         {/* Geometric pattern overlay */}
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:48px_48px] [mask-image:radial-gradient(ellipse_80%_80%_at_50%_50%,black,transparent)]"></div>
@@ -54,7 +51,7 @@ const Typo = () => {
           >
             {/* Main title with creative animation */}
             <div className="relative">
-              <motion.h1 
+              <motion.h1
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.8, duration: 0.8 }}
@@ -65,18 +62,20 @@ const Typo = () => {
                   animate={{ x: 0, opacity: 1 }}
                   transition={{ delay: 1, duration: 0.8 }}
                   className="inline-block bg-gradient-to-r from-gray-200 via-white to-gray-400 bg-clip-text text-transparent drop-shadow-[0_2px_16px_rgba(255,255,255,0.25)] relative"
-                  style={{ textShadow: '0 2px 24px rgba(255,255,255,0.18), 0 1px 0 #fff' }}
+                  style={{
+                    textShadow:
+                      "0 2px 24px rgba(255,255,255,0.18), 0 1px 0 #fff",
+                  }}
                 >
                   Typography
                   <motion.div
                     initial={{ width: 0 }}
-                    animate={{ width: '100%' }}
+                    animate={{ width: "100%" }}
                     transition={{ delay: 1.8, duration: 0.8 }}
                     className="absolute -bottom-2 left-0 h-[2px] bg-gradient-to-r from-transparent via-gray-300/50 to-transparent"
                   ></motion.div>
                 </motion.span>
                 <br />
-               
               </motion.h1>
 
               {/* Decorative circles */}
@@ -114,10 +113,10 @@ const Typo = () => {
               transition={{ delay: 1.5, duration: 0.8 }}
               className="relative"
             >
-              <motion.p
-                className="text-xs md:text-2xl text-neutral-300 max-w-2xl mx-auto mb-12 font-light leading-relaxed tracking-wide"
-              >
-                <span className="text-blue-400 font-medium">Exploring the art of type</span>{" "}
+              <motion.p className="text-xs md:text-2xl text-neutral-300 max-w-2xl mx-auto mb-12 font-light leading-relaxed tracking-wide">
+                <span className="text-blue-400 font-medium">
+                  Exploring the art of type
+                </span>{" "}
                 through experimental typography design and visual expression
               </motion.p>
 
@@ -132,31 +131,33 @@ const Typo = () => {
           </motion.div>
         </div>
 
-          {/* Scroll indicator */}
-          <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1.5, duration: 0.8 }}
-              className="absolute bottom-12 left-1/2 transform -translate-x-1/2"
+        {/* Scroll indicator */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1.5, duration: 0.8 }}
+          className="absolute bottom-12 left-1/2 transform -translate-x-1/2"
+        >
+          <div className="flex flex-col items-center">
+            <span className="text-neutral-500 text-sm mb-2">
+              Scroll to explore
+            </span>
+            <motion.div
+              animate={{ y: [0, 10, 0] }}
+              transition={{ duration: 1.5, repeat: Infinity }}
+              className="w-6 h-10 border-2 border-neutral-500 rounded-full flex justify-center p-2"
             >
-              <div className="flex flex-col items-center">
-                <span className="text-neutral-500 text-sm mb-2">Scroll to explore</span>
-                <motion.div
-                  animate={{ y: [0, 10, 0] }}
-                  transition={{ duration: 1.5, repeat: Infinity }}
-                  className="w-6 h-10 border-2 border-neutral-500 rounded-full flex justify-center p-2"
-                >
-                  <motion.div
-                    animate={{ y: [0, 12, 0] }}
-                    transition={{ duration: 1.5, repeat: Infinity }}
-                    className="w-1 h-1 bg-neutral-500 rounded-full"
-                  ></motion.div>
-                </motion.div>
-              </div>
+              <motion.div
+                animate={{ y: [0, 12, 0] }}
+                transition={{ duration: 1.5, repeat: Infinity }}
+                className="w-1 h-1 bg-neutral-500 rounded-full"
+              ></motion.div>
             </motion.div>
+          </div>
+        </motion.div>
       </div>
       <div>
-         {/* Project Display Section */}
+        {/* Project Display Section */}
         <div className="max-w-[90rem] mx-auto px-4 py-16 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12">
             {/* Project 1 */}
@@ -303,7 +304,6 @@ const Typo = () => {
               </div>
             </motion.div>
 
-            
             {/* Project 10 */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}

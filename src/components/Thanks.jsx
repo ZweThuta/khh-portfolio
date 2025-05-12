@@ -5,23 +5,23 @@ const Thanks = () => {
     <div className="min-h-screen relative overflow-hidden bg-neutral-900">
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <motion.div 
-          animate={{ 
+        <motion.div
+          animate={{
             scale: [1, 1.2, 1],
-            rotate: [0, 90, 0]
+            rotate: [0, 90, 0],
           }}
           transition={{ duration: 20, repeat: Infinity }}
           className="absolute top-20 left-10 w-[500px] h-[500px] bg-blue-900/10 rounded-full blur-3xl"
         ></motion.div>
         <motion.div
-          animate={{ 
+          animate={{
             scale: [1.2, 1, 1.2],
-            rotate: [0, -90, 0]
+            rotate: [0, -90, 0],
           }}
           transition={{ duration: 20, repeat: Infinity }}
           className="absolute bottom-20 right-10 w-[500px] h-[500px] bg-blue-800/10 rounded-full blur-3xl"
         ></motion.div>
-        
+
         {/* Grid Pattern */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:48px_48px] [mask-image:radial-gradient(ellipse_80%_80%_at_50%_50%,black,transparent)]"></div>
       </div>
@@ -55,7 +55,7 @@ const Thanks = () => {
               <h3 className="text-2xl md:text-3xl font-bold mb-8 bg-gradient-to-r from-blue-300 to-blue-500 bg-clip-text text-transparent">
                 Let's Connect
               </h3>
-              
+
               {/* Contact Links */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                 <motion.a
@@ -65,8 +65,18 @@ const Thanks = () => {
                   className="group flex items-center p-4 rounded-xl bg-black/30 hover:bg-blue-900/20 transition-all duration-300"
                 >
                   <div className="p-3 rounded-full bg-red-600/20 group-hover:bg-red-600/30 transition-all duration-300">
-                    <svg className="w-6 h-6 text-red-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    <svg
+                      className="w-6 h-6 text-red-700"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                      />
                     </svg>
                   </div>
                   <span className="ml-4 text-neutral-300 group-hover:text-blue-200 transition-colors duration-300">
@@ -82,8 +92,12 @@ const Thanks = () => {
                   className="group flex items-center p-4 rounded-xl bg-black/30 hover:bg-blue-900/20 transition-all duration-300"
                 >
                   <div className="p-3 rounded-full bg-black group-hover:bg-black/80 transition-all duration-300">
-                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                    <svg
+                      className="w-6 h-6 text-white"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" />
                     </svg>
                   </div>
                   <span className="ml-4 text-neutral-300 group-hover:text-blue-200 transition-colors duration-300">
@@ -99,8 +113,9 @@ const Thanks = () => {
                 transition={{ duration: 0.8, delay: 0.4 }}
                 className="text-neutral-400 text-lg leading-relaxed"
               >
-                Thank you for exploring my portfolio. I'm always excited to collaborate on new projects 
-                and bring creative ideas to life. Feel free to reach out!
+                Thank you for exploring my portfolio. I'm always excited to
+                collaborate on new projects and bring creative ideas to life.
+                Feel free to reach out!
               </motion.p>
             </div>
           </motion.div>
@@ -114,7 +129,7 @@ const Thanks = () => {
           ></motion.div>
         </div>
       </div>
-   </div>
+    </div>
   );
 };
 

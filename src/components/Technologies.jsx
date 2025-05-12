@@ -16,23 +16,25 @@ const iconVariants = (duration) => ({
       },
       opacity: {
         duration: 0.8,
-      }
+      },
     },
   },
 });
 
 const softwareTools = [
-  { 
-    name: "Adobe Photoshop", 
-    icon: <SiAdobephotoshop className="text-6xl lg:text-6xl text-[#31A8FF]" />, 
+  {
+    name: "Adobe Photoshop",
+    icon: <SiAdobephotoshop className="text-6xl lg:text-6xl text-[#31A8FF]" />,
     duration: 2.5,
-    description: "Photo Editing & Digital Art"
+    description: "Photo Editing & Digital Art",
   },
-  { 
-    name: "Adobe Illustrator", 
-    icon: <SiAdobeillustrator className="text-6xl lg:text-6xl text-[#FF9A00]" />, 
+  {
+    name: "Adobe Illustrator",
+    icon: (
+      <SiAdobeillustrator className="text-6xl lg:text-6xl text-[#FF9A00]" />
+    ),
     duration: 3,
-    description: "Vector Graphics & Illustrations"
+    description: "Vector Graphics & Illustrations",
   },
 ];
 
@@ -84,14 +86,14 @@ const Technologies = () => {
                   className="group relative"
                 >
                   <div className="relative flex items-center space-x-6 rounded-xl border border-neutral-700/50 bg-neutral-900/90 p-6 hover:border-neutral-600 transition-all duration-300 group-hover:scale-[1.02] group-hover:-translate-y-1">
-                    <div className="flex-shrink-0">
-                      {tool.icon}
-                    </div>
+                    <div className="flex-shrink-0">{tool.icon}</div>
                     <div>
                       <p className="lg:text-lg text-sm font-semibold text-white mb-1 bg-gradient-to-r from-white to-neutral-400 bg-clip-text text-transparent">
                         {tool.name}
                       </p>
-                      <p className="lg:text-sm text-xs text-neutral-400">{tool.description}</p>
+                      <p className="lg:text-sm text-xs text-neutral-400">
+                        {tool.description}
+                      </p>
                     </div>
                   </div>
                 </motion.div>

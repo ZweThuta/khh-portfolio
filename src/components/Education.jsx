@@ -14,7 +14,10 @@ const Education = () => {
       </motion.h1>
       <div dl>
         {EDUCATION.map((education, index) => (
-          <div key={index} className="mb-20 flex flex-wrap lg:justify-center text-justify">
+          <div
+            key={index}
+            className="mb-20 flex flex-wrap lg:justify-center text-justify"
+          >
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: -100 }}
@@ -31,7 +34,9 @@ const Education = () => {
             >
               <h6 className="mb-2 text-xl font-semibold text-white flex flex-col">
                 {education.role}
-                <span className="mb-2 text-sm text-purple-500 hover:underline">{education.company}</span>
+                <span className="mb-2 text-sm text-purple-500 hover:underline">
+                  {education.company}
+                </span>
               </h6>
               <p className="text-sm">{education.description}</p>
             </motion.div>

@@ -11,7 +11,7 @@ const Navbar = () => {
                 PORTFOLIO
               </span>
             </div>
-            
+
             <div className="flex items-center justify-center gap-6">
               {/* <a 
                 href="https://www.facebook.com/share/1FGsL31Dw5/?mibextid=wwXIfr" 
@@ -21,23 +21,23 @@ const Navbar = () => {
               >
                 <FaFacebook className="text-2xl text-[#1877F2] hover:opacity-80" />  
               </a> */}
-              
-              <a 
-                href="https://www.instagram.com/khinhtethlaing4?igsh=MWZhMWczNWVxb2Z6dg%3D%3D&utm_source=qr" 
-                target="_blank" 
+
+              <a
+                href="https://www.instagram.com/khinhtethlaing4?igsh=MWZhMWczNWVxb2Z6dg%3D%3D&utm_source=qr"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="transform hover:scale-110 transition-transform duration-200"
               >
-                <FaInstagram className="text-2xl text-[#E4405F] hover:opacity-80" />  
+                <FaInstagram className="text-2xl text-[#E4405F] hover:opacity-80" />
               </a>
 
-              <a 
-                href="https://www.tiktok.com/@khin.htet.hlaing4?_t=ZS-8ucz4ywEub1&_r=1" 
-                target="_blank" 
+              <a
+                href="https://www.tiktok.com/@khin.htet.hlaing4?_t=ZS-8ucz4ywEub1&_r=1"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="transform hover:scale-110 transition-transform duration-200"
               >
-                <FaTiktok className="text-2xl text-white hover:opacity-80" />  
+                <FaTiktok className="text-2xl text-white hover:opacity-80" />
               </a>
             </div>
           </div>
@@ -47,6 +47,6 @@ const Navbar = () => {
       <div className="h-16"></div>
     </>
   );
-}
+};
 
 export default Navbar;

@@ -8,23 +8,23 @@ const Mascort = () => {
       {/* Decorative background patterns */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Animated gradient circles */}
-        <motion.div 
-          animate={{ 
+        <motion.div
+          animate={{
             scale: [1, 1.2, 1],
-            rotate: [0, 90, 0]
+            rotate: [0, 90, 0],
           }}
           transition={{ duration: 20, repeat: Infinity }}
           className="absolute top-20 left-10 w-[500px] h-[500px] bg-green-500/10 rounded-full blur-3xl"
         ></motion.div>
         <motion.div
-          animate={{ 
+          animate={{
             scale: [1.2, 1, 1.2],
-            rotate: [0, -90, 0]
+            rotate: [0, -90, 0],
           }}
           transition={{ duration: 20, repeat: Infinity }}
           className="absolute bottom-20 right-10 w-[500px] h-[500px] bg-emerald-500/10 rounded-full blur-3xl"
         ></motion.div>
-        
+
         {/* Geometric pattern overlay */}
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:48px_48px] [mask-image:radial-gradient(ellipse_80%_80%_at_50%_50%,black,transparent)]"></div>
@@ -58,7 +58,7 @@ const Mascort = () => {
               ></motion.div>
 
               {/* Main title */}
-              <motion.h1 
+              <motion.h1
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.8, duration: 0.8 }}
@@ -135,26 +135,21 @@ const Mascort = () => {
                 transition={{ delay: 2.2, duration: 0.8 }}
                 className="absolute -top-6 left-1/2 transform -translate-x-1/2 h-[1px] bg-gradient-to-r from-transparent via-green-500/30 to-transparent"
               ></motion.div>
-              <motion.p
-                className="text-xs md:text-2xl text-neutral-300 max-w-2xl mx-auto mb-12 font-light leading-relaxed tracking-wide"
-              >
-                <span className="text-green-400 font-medium">Bringing characters to life</span>{" "}
-                through creative and memorable mascot designs 
+              <motion.p className="text-xs md:text-2xl text-neutral-300 max-w-2xl mx-auto mb-12 font-light leading-relaxed tracking-wide">
+                <span className="text-green-400 font-medium">
+                  Bringing characters to life
+                </span>{" "}
+                through creative and memorable mascot designs
               </motion.p>
 
-              
               <motion.div
                 initial={{ width: 0 }}
                 animate={{ width: "100px" }}
                 transition={{ delay: 2.2, duration: 0.8 }}
                 className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 h-[1px] bg-gradient-to-r from-transparent via-green-500/30 to-transparent"
               ></motion.div>
-              
             </motion.div>
-
-       
           </motion.div>
-          
         </div>
 
         {/* Project Display Section */}
@@ -168,16 +163,16 @@ const Mascort = () => {
                 transition={{ delay: 0.2, duration: 0.5 }}
                 className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-24 h-24 border border-green-500/20 rounded-full"
               ></motion.div>
-              
+
               <motion.h2
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
                 className="text-2xl md:text-5xl font-bold mb-8 relative"
               >
-               <span className="bg-gradient-to-r from-yellow-300 via-yellow-300 to-yellow-400 bg-clip-text text-transparent">
-               The Heartwarming Mascot of YKKO
-</span>
+                <span className="bg-gradient-to-r from-yellow-300 via-yellow-300 to-yellow-400 bg-clip-text text-transparent">
+                  The Heartwarming Mascot of YKKO
+                </span>
 
                 <br />
                 <span className="text-xl md:text-4xl text-neutral-400">
@@ -191,9 +186,10 @@ const Mascort = () => {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className="text-neutral-400 max-w-3xl mx-auto lg:text-lg text-xs leading-relaxed"
               >
-                This vibrant mascot design for YKKO embodies warmth, hospitality, and the brand's rich legacy. 
-                Featuring a cheerful green bear dressed as a friendly chef, the character symbolizes quality 
-                service and dedication to customer satisfaction. 
+                This vibrant mascot design for YKKO embodies warmth,
+                hospitality, and the brand's rich legacy. Featuring a cheerful
+                green bear dressed as a friendly chef, the character symbolizes
+                quality service and dedication to customer satisfaction.
               </motion.p>
             </div>
             {/* Image Grid Layout - Horizontal */}
@@ -210,9 +206,9 @@ const Mascort = () => {
                   <div className="w-full md:w-2/3 lg:w-3/4">
                     <div className="group relative overflow-hidden rounded-2xl bg-neutral-800/50">
                       <div className="relative aspect-[16/9] overflow-hidden">
-                        <img 
-                          src={mas1} 
-                          alt="YKKO Mascot Front View" 
+                        <img
+                          src={mas1}
+                          alt="YKKO Mascot Front View"
                           className="w-full h-full object-contain object-center transform group-hover:scale-105 transition-transform duration-700"
                         />
                         {/* Overlay gradient */}
@@ -236,8 +232,15 @@ const Mascort = () => {
                       whileInView={{ opacity: 1, x: 0 }}
                       transition={{ duration: 0.6, delay: 0.3 }}
                     >
-                      <h3 className="lg:text-2xl text-xl font-bold bg-gradient-to-r from-yellow-300 to-amber-200 bg-clip-text text-transparent mb-4"> Primary View Design</h3>
-                      <p className="text-neutral-400 text-sm leading-relaxed">Showcasing the mascot's friendly and welcoming personality, with carefully crafted details that bring the character to life.</p>
+                      <h3 className="lg:text-2xl text-xl font-bold bg-gradient-to-r from-yellow-300 to-amber-200 bg-clip-text text-transparent mb-4">
+                        {" "}
+                        Primary View Design
+                      </h3>
+                      <p className="text-neutral-400 text-sm leading-relaxed">
+                        Showcasing the mascot's friendly and welcoming
+                        personality, with carefully crafted details that bring
+                        the character to life.
+                      </p>
                     </motion.div>
                   </div>
                 </div>
@@ -255,9 +258,9 @@ const Mascort = () => {
                   <div className="w-full md:w-2/3 lg:w-3/4">
                     <div className="group relative overflow-hidden rounded-2xl bg-neutral-800/50">
                       <div className="relative aspect-[16/9] overflow-hidden">
-                        <img 
-                          src={mas2} 
-                          alt="YKKO Mascot Side View" 
+                        <img
+                          src={mas2}
+                          alt="YKKO Mascot Side View"
                           className="w-full h-full object-contain object-center transform group-hover:scale-105 transition-transform duration-700"
                         />
                         {/* Overlay gradient */}
@@ -281,8 +284,14 @@ const Mascort = () => {
                       whileInView={{ opacity: 1, x: 0 }}
                       transition={{ duration: 0.6, delay: 0.3 }}
                     >
-                      <h3 className="lg:text-2xl text-xl font-bold bg-gradient-to-r from-yellow-300 to-amber-200 bg-clip-text text-transparent mb-4">Secondary View Design</h3>
-                      <p className="text-neutral-400 text-sm leading-relaxed">Highlighting the mascot's dynamic and expressive character through distinctive poses and engaging gestures.</p>
+                      <h3 className="lg:text-2xl text-xl font-bold bg-gradient-to-r from-yellow-300 to-amber-200 bg-clip-text text-transparent mb-4">
+                        Secondary View Design
+                      </h3>
+                      <p className="text-neutral-400 text-sm leading-relaxed">
+                        Highlighting the mascot's dynamic and expressive
+                        character through distinctive poses and engaging
+                        gestures.
+                      </p>
                     </motion.div>
                   </div>
                 </div>

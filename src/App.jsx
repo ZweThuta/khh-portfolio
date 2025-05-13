@@ -47,12 +47,12 @@ function App() {
         <Typo />
         <Projects />
         <Social/>
+        <Poster />
         <Package />
         <Mascort />
         <Art />
         <Flat />
         <Experimental />
-        <Poster />
         <Thanks />
         {/* <Contact/> */}
       </div>

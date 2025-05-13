@@ -1,6 +1,3 @@
-import oval from "../assets/branding/BrandLogo1.png";
-import oval2 from "../assets/branding/BrandLogo3.png";
-import oval3 from "../assets/branding/BrandLogo2.png";
 
 
 export const HERO_CONTENT = `"I am a dedicated graphic designer and freelance creative professional with a strong passion for innovation and continuous learning. I strive to enhance my skills and deliver high-quality work that achieves impactful results. With a keen eye for detail and a commitment to excellence. I consider myself a detail-oriented and hardworking individual, always eager to learn and grow at every step of the journey."`;
@@ -34,14 +31,6 @@ export const EDUCATION = [
   },
 ];
 
-export const PROJECTS = [
-  {
-    title:"Oval Shop",
-    description:"Oval Shop Furniture Design is a family-owned Swedish company. The design approach focuses on a diverse color palette and simple typography. The color scheme is inspired by natural tones, creating a harmonious and timeless aesthetic.",
-    image:{oval,oval2,oval3},
-  }
-  
-];
 
 export const CONTACT = {
   address: "Mingaladon, Yangon",

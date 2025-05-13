@@ -38,7 +38,7 @@ const Hero = () => {
                 animate="visible"
                 className="lg:text-3xl text-xl font-semibold tracking-tight"
               >
-                <span className="bg-gradient-to-r from-purple-500 via-pink-500 to-cyan-400 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-blue-500 via-blue-500 to-cyan-400 bg-clip-text text-transparent">
                   Graphic Designer & Freelancer
                 </span>
               </motion.span>
@@ -69,7 +69,7 @@ const Hero = () => {
                 transition={{ duration: 0.7, delay: 0.5 }}
                 className="relative"
               >
-                <div className="absolute -inset-4 bg-gradient-to-r from-purple-600 to-cyan-600 rounded-2xl blur-2xl opacity-30"></div>
+                <div className="absolute -inset-4 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-2xl blur-2xl opacity-30"></div>
                 <img
                   src={profilePic}
                   width={400}

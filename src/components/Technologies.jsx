@@ -53,7 +53,7 @@ const Technologies = () => {
         transition={{ duration: 1.5 }}
         className="my-20 text-center text-4xl md:text-6xl font-bold"
       >
-        <span className="bg-gradient-to-r from-purple-400 via-pink-500 to-cyan-400 bg-clip-text text-transparent">
+        <span className="bg-gradient-to-r from-blue-400 via-blue-500 to-cyan-400 bg-clip-text text-transparent">
           Software & Skills
         </span>
       </motion.h1>
@@ -69,7 +69,7 @@ const Technologies = () => {
           >
             <div className="relative">
               <h2 className="lg:text-3xl text-xl text-center mb-16 font-bold">
-                <span className="bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-blue-400 to-blue-500 bg-clip-text text-transparent">
                   Software Proficiency
                 </span>
               </h2>

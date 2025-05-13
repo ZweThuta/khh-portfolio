@@ -147,6 +147,54 @@ const Social = () => {
         </div>
       </div>
 
+      {/* Project Title and Description */}
+      <div className="text-center mb-16 relative">
+        <motion.div
+          initial={{ scale: 0, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          transition={{ delay: 0.2, duration: 0.5 }}
+          className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-24 h-24 border border-blue-500/20 rounded-full"
+        >
+          <motion.div
+            animate={{ scale: [1, 1.1, 1] }}
+            transition={{ duration: 4, repeat: Infinity }}
+            className="absolute inset-2 border border-blue-400/20 rounded-full"
+          ></motion.div>
+        </motion.div>
+
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-2xl md:text-6xl font-bold mb-6 relative"
+        >
+          <span className="bg-gradient-to-r from-blue-400 via-blue-500 to-blue-400 bg-clip-text text-transparent">
+            Sports Marketing
+          </span>
+
+          <br />
+          <span className="text-xl md:text-4xl text-neutral-300 font-medium">
+            Social Media Design
+          </span>
+        </motion.h2>
+
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="text-neutral-400 lg:max-w-3xl max-w-xl mx-auto lg:text-lg text-sm leading-relaxed"
+        >
+          Elevating sports brands through dynamic social media content that captures the energy and passion of athletic excellence. From game highlights to brand storytelling, create engaging visuals that connect with fans and drive engagement.
+        </motion.p>
+
+        <motion.div
+          initial={{ width: 0 }}
+          whileInView={{ width: "100px" }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          className="h-px bg-gradient-to-r from-transparent via-blue-500/30 to-transparent mx-auto mt-8"
+        ></motion.div>
+      </div>
+
       {/* Project Display Section */}
       <div className="space-y-3 mx-4 md:mx-10">
         {/* First Row */}
@@ -178,9 +226,10 @@ const Social = () => {
             </motion.div>
           </div>
         </div>
+        
         {/* Second Row */}
         <div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 grid-rows-3 gap-2">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 grid-rows-3 gap-2 mb-60">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -219,9 +268,57 @@ const Social = () => {
             </motion.div>
           </div>
         </div>
+
+        {/* Project Title and Description */}
+      <div className="text-center relative">
+        <motion.div
+          initial={{ scale: 0, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          transition={{ delay: 0.2, duration: 0.5 }}
+          className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-24 h-24 border border-blue-500/20 rounded-full"
+        >
+          <motion.div
+            animate={{ scale: [1, 1.1, 1] }}
+            transition={{ duration: 4, repeat: Infinity }}
+            className="absolute inset-2 border border-blue-400/20 rounded-full"
+          ></motion.div>
+        </motion.div>
+
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-2xl md:text-6xl font-bold mb-6 relative"
+        >
+          <span className="bg-gradient-to-r from-blue-500 via-blue-800 to-blue-400 bg-clip-text text-transparent">
+            Education & Language
+          </span>
+
+          <br />
+          <span className="text-xl md:text-4xl text-neutral-300 font-medium">
+            Social Media Design
+          </span>
+        </motion.h2>
+
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="text-neutral-400 lg:max-w-3xl max-w-xl mx-auto lg:text-lg text-sm leading-relaxed"
+        >
+          Creating engaging educational content that makes learning accessible and enjoyable.
+        </motion.p>
+
+        <motion.div
+          initial={{ width: 0 }}
+          whileInView={{ width: "100px" }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          className="h-px bg-gradient-to-r from-transparent via-blue-500/30 to-transparent mx-auto mt-8"
+        ></motion.div>
+      </div>
         {/* Third Row */}
         <div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 grid-rows-3 gap-2">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 grid-rows-3 mt-10 gap-2">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -262,7 +359,7 @@ const Social = () => {
         </div>
         {/* Fourth Row */}
         <div>
-          <div className="grid grid-cols-1 md:grid-cols-6 grid-rows-5 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-6 grid-rows-5 gap-4 mb-60">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -289,13 +386,60 @@ const Social = () => {
             </motion.div>
           </div>
         </div>
+            {/* Project Title and Description */}
+      <div className="text-center relative">
+        <motion.div
+          initial={{ scale: 0, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          transition={{ delay: 0.2, duration: 0.5 }}
+          className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-24 h-24 border border-blue-500/20 rounded-full"
+        >
+          <motion.div
+            animate={{ scale: [1, 1.1, 1] }}
+            transition={{ duration: 4, repeat: Infinity }}
+            className="absolute inset-2 border border-blue-400/20 rounded-full"
+          ></motion.div>
+        </motion.div>
+
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-2xl md:text-6xl font-bold mb-6 relative"
+        >
+          <span className="bg-gradient-to-r from-blue-500 via-purple-500 to-blue-400 bg-clip-text text-transparent">
+            Beauty & Skincare
+          </span>
+
+          <br />
+          <span className="text-xl md:text-4xl text-neutral-300 font-medium">
+            Social Media Design
+          </span>
+        </motion.h2>
+
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="text-neutral-400 lg:max-w-3xl max-w-xl mx-auto lg:text-lg text-sm leading-relaxed"
+        >
+          Crafting captivating beauty content that showcases products in their best light. 
+        </motion.p>
+
+        <motion.div
+          initial={{ width: 0 }}
+          whileInView={{ width: "100px" }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          className="h-px bg-gradient-to-r from-transparent via-pink-500/30 to-transparent mx-auto mt-8"
+        ></motion.div>
+      </div>
         {/* Fifth Row */}
         <div className="grid grid-cols-1 md:grid-cols-5 grid-rows-5 gap-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="col-span-1 md:col-span-2 row-span-5 aspect-auto overflow-hidden"
+            className="col-span-1 md:col-span-2 row-span-5 aspect-auto overflow-hidden mt-10"
           >
             <img
               src={pj13}
@@ -307,7 +451,7 @@ const Social = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="col-span-1 md:col-span-3 md:col-start-3 row-span-5 aspect-auto overflow-hidden"
+            className="col-span-1 md:col-span-3 md:col-start-3 row-span-5 aspect-auto overflow-hidden mt-10"
           >
             <img
               src={pj14}

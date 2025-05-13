@@ -14,6 +14,7 @@ import Experimental from "./components/Experimental";
 import Poster from "./components/Poster";
 import Thanks from "./components/Thanks";
 import Typo from "./components/Typo";
+import Social from "./components/Social";
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
         {/* <Education/> */}
         <Typo />
         <Projects />
+        <Social/>
         <Package />
         <Mascort />
         <Art />

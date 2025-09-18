@@ -24,9 +24,15 @@ export const EDUCATION = [
     description: `In 2022, I began my journey into programming through self-learning, starting with HTML, CSS, and JavaScript. I leveraged YouTube tutorials, free online courses, and hands-on projects to build a strong foundation in web development. As I progressed, I explored more advanced topics, including responsive design, modern UI frameworks, and backend development.`,
   },
   {
-    year: "2024 - current",
+    year: "2024 - 2024",
     role: "Graphic Design & Illustration",
     company: "Donato",
+    description: `I pursued a three-year program in Architecture at Technology University, Hmawbi, where I gained expertise in AutoCAD and SketchUp for designing home structures, along with Lumion for high-quality 3D rendering. My studies allowed me to develop a strong eye for design, spatial awareness, and attention to detail. However, during the COVID-19 pandemic, my academic journey took an unexpected turn when the university was forced to close. This challenge led me to explore the world of programming, where I discovered my passion for web development.`,
+  },
+  {
+    year: "2025 - current",
+    role: "Graphic Design",
+    company: "Raffles International College ",
     description: `I pursued a three-year program in Architecture at Technology University, Hmawbi, where I gained expertise in AutoCAD and SketchUp for designing home structures, along with Lumion for high-quality 3D rendering. My studies allowed me to develop a strong eye for design, spatial awareness, and attention to detail. However, during the COVID-19 pandemic, my academic journey took an unexpected turn when the university was forced to close. This challenge led me to explore the world of programming, where I discovered my passion for web development.`,
   },
 ];

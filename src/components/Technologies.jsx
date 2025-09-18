@@ -1,4 +1,5 @@
 import { SiAdobephotoshop, SiAdobeillustrator } from "react-icons/si";
+import { SiBlender, SiAutodeskmaya } from "react-icons/si";
 import { motion } from "framer-motion";
 import { EDUCATION } from "../constants";
 
@@ -35,6 +36,18 @@ const softwareTools = [
     ),
     duration: 3,
     description: "Vector Graphics & Illustrations",
+  },
+  {
+    name: "Autodesk Maya",
+    icon: <SiAutodeskmaya className="text-6xl lg:text-6xl text-[#37A5CC]" />,
+    duration: 2.8,
+    description: "3D Modeling, Animation & Rendering",
+  },
+  {
+    name: "Blender",
+    icon: <SiBlender className="text-6xl lg:text-6xl text-[#E87D0D]" />,
+    duration: 2.2,
+    description: "Open-source 3D Creation Suite",
   },
 ];
 

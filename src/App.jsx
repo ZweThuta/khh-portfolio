@@ -47,14 +47,14 @@ function App() {
         <Technologies />
         {/* <About/> */}
         {/* <Education/> */}
-        <Typo />
         <Projects />
-        <UIUX/>
-        <ProductDesign/>
-        <Social/>
-        <Event/>
-        <Poster />
         <Package />
+        <Typo />
+        <Poster />
+        <UIUX />
+        <ProductDesign />
+        <Social />
+        <Event />
         <Mascort />
         <Art />
         <Flat />

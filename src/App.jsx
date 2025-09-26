@@ -15,6 +15,9 @@ import Poster from "./components/Poster";
 import Thanks from "./components/Thanks";
 import Typo from "./components/Typo";
 import Social from "./components/Social";
+import Event from "./components/Event";
+import UIUX from "./components/UIUX";
+import ProductDesign from "./components/ProductDesign";
 
 function App() {
   return (
@@ -46,7 +49,10 @@ function App() {
         {/* <Education/> */}
         <Typo />
         <Projects />
+        <UIUX/>
+        <ProductDesign/>
         <Social/>
+        <Event/>
         <Poster />
         <Package />
         <Mascort />

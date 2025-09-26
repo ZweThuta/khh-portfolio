@@ -1,4 +1,4 @@
-import { SiAdobephotoshop, SiAdobeillustrator } from "react-icons/si";
+import { SiAdobephotoshop, SiAdobeillustrator, SiFigma } from "react-icons/si";
 import { SiBlender, SiAutodeskmaya } from "react-icons/si";
 import { motion } from "framer-motion";
 import { EDUCATION } from "../constants";
@@ -36,6 +36,12 @@ const softwareTools = [
     ),
     duration: 3,
     description: "Vector Graphics & Illustrations",
+  },
+  {
+    name: "Figma",
+    icon: <SiFigma className="text-6xl lg:text-6xl text-[#F24E1E]" />,
+    duration: 2.6,
+    description: "UI/UX Design & Prototyping",
   },
   {
     name: "Autodesk Maya",

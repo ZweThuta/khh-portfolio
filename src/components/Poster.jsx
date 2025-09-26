@@ -9,6 +9,11 @@ import poster7 from "../assets/poster/po7.png";
 import poster8 from "../assets/poster/po8.png";
 import poster9 from "../assets/poster/d25.jpeg";
 import poster10 from "../assets/poster/D28.jpeg";
+import poster11 from "../assets/poster/poster11.jpg";
+import poster12 from "../assets/poster/poster12.jpg";
+import poster13 from "../assets/poster/poster13.jpg";
+import poster14 from "../assets/poster/poster14.jpg";
+
 
 
 const Poster = () => {
@@ -310,6 +315,73 @@ const Poster = () => {
                    <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                  </div>
                </motion.div>
+
+              {/* Fourth Row */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                className="group relative overflow-hidden rounded-2xl bg-neutral-800/50"
+              >
+                <div className="aspect-[3/4] overflow-hidden">
+                  <img 
+                    src={poster11} 
+                    alt="Poster Design 11"
+                    className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                </div>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+                className="group relative overflow-hidden rounded-2xl bg-neutral-800/50"
+              >
+                <div className="aspect-[3/4] overflow-hidden">
+                  <img 
+                    src={poster12} 
+                    alt="Poster Design 12"
+                    className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                </div>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                className="group relative overflow-hidden rounded-2xl bg-neutral-800/50"
+              >
+                <div className="aspect-[3/4] overflow-hidden">
+                  <img 
+                    src={poster13} 
+                    alt="Poster Design 13"
+                    className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                </div>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+                className="group relative overflow-hidden rounded-2xl bg-neutral-800/50"
+              >
+                <div className="aspect-[3/4] overflow-hidden">
+                  <img 
+                    src={poster14} 
+                    alt="Poster Design 14"
+                    className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                </div>
+              </motion.div>
+
+          
 
           
              </div>

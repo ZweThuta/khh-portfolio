@@ -3,6 +3,7 @@ import art1 from "../assets/illu/iso3.jpg";
 import art2 from "../assets/illu/iso2.png";
 import art3 from "../assets/poster/fight club.png";
 import art4 from "../assets/poster/queen.png";
+import art5 from "../assets/illu/runner.jpg";
 
 const Flat = () => {
   return (
@@ -401,6 +402,82 @@ const Flat = () => {
                 </motion.div>
               </div>
             </motion.div>
+          </div>
+        </div>
+      </div>
+
+      {/* Project Display Section - Runner */}
+      <div className="min-h-screen bg-neutral-900 py-20 px-4 relative">
+        <div className="max-w-7xl mx-auto">
+          {/* Flex container for horizontal layout */}
+          <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+            {/* Image Display - Left Side */}
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              className="w-full lg:w-2/3"
+            >
+              <div className="group relative overflow-hidden rounded-2xl bg-neutral-800/50">
+                <div className="relative overflow-hidden">
+                  <img
+                    src={art5}
+                    alt="Athletic Runner in Motion"
+                    className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700"
+                  />
+                  {/* Hover overlay gradient */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                </div>
+
+                {/* Decorative elements */}
+                <motion.div
+                  initial={{ scale: 0 }}
+                  whileInView={{ scale: 1 }}
+                  transition={{ delay: 0.3, duration: 0.5 }}
+                  className="absolute -top-4 -right-4 w-20 h-20 border border-pink-300/20 rounded-full"
+                >
+                  <div className="absolute inset-1 border border-yellow-200/20 rounded-full"></div>
+                </motion.div>
+              </div>
+            </motion.div>
+
+            {/* Content - Right Side */}
+            <div className="w-full lg:w-1/3">
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                className="text-left"
+              >
+                <motion.h2
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6 }}
+                  className="text-2xl md:text-4xl font-bold mb-6 relative"
+                >
+                  <span className="bg-gradient-to-r from-pink-300 via-pink-200 to-pink-300 bg-clip-text text-transparent">
+                    Athletic Determination
+                  </span>
+                </motion.h2>
+
+                <motion.p
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ duration: 0.6, delay: 0.3 }}
+                  className="text-neutral-400 text-sm md:text-base leading-relaxed"
+                >
+                  A dynamic flat illustration capturing the intensity of athletic performance. The runner, wearing number 202, pushes through abstract obstacles represented by swirling energy and shadowy figures, symbolizing the mental and physical challenges athletes face. The vibrant pink and red background contrasts with the dark silhouettes, creating a powerful visual metaphor for determination and perseverance in sports.
+                </motion.p>
+
+                {/* Decorative line */}
+                <motion.div
+                  initial={{ width: 0 }}
+                  whileInView={{ width: "100%" }}
+                  transition={{ duration: 0.8, delay: 0.5 }}
+                  className="h-px bg-gradient-to-r from-pink-300/20 to-transparent mt-6"
+                ></motion.div>
+              </motion.div>
+            </div>
           </div>
         </div>
       </div>

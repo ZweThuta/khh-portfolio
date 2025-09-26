@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import Branding from "./Branding";
 import Branding2 from "./Branding2";
 import Branding3 from "./Branding3";
+import Branding4 from "./Branding4";
 
 const Projects = () => {
   return (
@@ -73,6 +74,7 @@ const Projects = () => {
         </div>
       </div>
       <div>
+        <Branding4/>
         <Branding3/>
         <Branding />
         <Branding2/>
